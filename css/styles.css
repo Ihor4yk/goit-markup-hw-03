@@ -77,11 +77,17 @@ body {
 	letter-spacing: 0.03em;
 }
 
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 /* Секція header */
 
 .header {
 	padding-top: 24px;
 	padding-bottom: 25px;
+	border-bottom: 1px solid #ECECEC;
 }
 
 .header-list {
@@ -96,10 +102,11 @@ body {
 
 .header-group {
 	display: flex;
+	margin: 0 auto;
 }
 
-.header-connect {
-	margin-left: auto;
+.header-group-item {
+	margin: 50px;
 }
 
 .header-logo {
@@ -130,7 +137,6 @@ body {
 	line-height: var(--typical-lh);
 	letter-spacing: 0.02em;
 	color: var(--main-contact-color);
-	margin-right: 50px;
 }
 
 .header-tel {
@@ -204,11 +210,6 @@ body {
 	column-gap: 30px;
 }
 
-.about {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
 .about-title {
 	font-weight: 700;
 	font-size: 14px;
@@ -238,7 +239,12 @@ body {
 }
 
 .employment {
-	padding-bottom: 94px;
+	padding-top: 0;
+}
+
+.employment-item {
+	max-width: 100%;
+	height: auto;
 }
 
 .employment-title {
@@ -250,8 +256,6 @@ body {
 
 .portfolio {
 	background-color: #f5f4fa;
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 
 .portfolio-title {
@@ -266,7 +270,6 @@ body {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-title-color);
-	margin-top: 30px;
 }
 
 .portfolio-text {
@@ -289,6 +292,11 @@ body {
 	border-radius: 0px 0px 4px 4px;
 }
 
+.portfolio-conect {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 /* Cекція footer */
 
 .footer {
@@ -304,7 +312,6 @@ body {
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: var(--main-logo-color);
-	margin-bottom: 20px;
 }
 
 .footer-colortext {
@@ -333,18 +340,13 @@ body {
 	margin-bottom: 20px;
 }
 
+.footer-item {
+	margin-top: 9px;
+}
+
 /* Портфоліо (другий макет) */
 
-.information {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
-.information-container-button {
-	margin-bottom: 50px;
-}
-
-.information-btn {
+.filter-btn {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
@@ -354,22 +356,21 @@ body {
 	cursor: pointer;
 }
 
-.information-btn:hover,
-.information-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
 	background-color: #2196f3;
 	color: #ffffff;
 }
 
-.information-title {
+.gallery-title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--main-title-color);
-	margin-top: 20px;
 }
 
-.information-text {
+.gallery-text {
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
@@ -377,18 +378,25 @@ body {
 	margin-top: 4px;
 }
 
-.information-list {
+.filter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.gallery {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	justify-content: center;
 }
 
-.information-container-img {
-	border: 1px solid #eeeeee;
-}
-
-.information-item-img {
+.gallery-item {
 	width: 370px;
-	border: 1px solid #eeeeee;
+}
+
+.gallery-content {
+	padding: 20px 24px 20px 24px;
+	border: 1px solid #EEEEEE;
 }
