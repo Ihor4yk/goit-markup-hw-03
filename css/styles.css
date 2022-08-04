@@ -102,7 +102,7 @@ body {
 
 .header-group {
 	display: flex;
-	margin: 0 auto;
+	margin-left: auto;
 }
 
 .header-group-item {
@@ -242,7 +242,7 @@ body {
 	padding-top: 0;
 }
 
-.employment-item {
+.employment-img {
 	max-width: 100%;
 	height: auto;
 }
